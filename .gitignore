@@ -1,3 +1,8 @@
+
+#Hillel
+*.idea
+*.git
+
 # Compiled class file
 *.class
 
