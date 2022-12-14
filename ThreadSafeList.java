@@ -40,56 +40,71 @@ public class ThreadSafeList implements Set {
     /////////////////////////////////////////////////
     @Override
     public int size() {
-        return 0;
+        throw new IllegalArgumentException();
+        //return 0;
     }
 
     @Override
     public boolean isEmpty() {
-        return false;
+
+        throw new IllegalArgumentException();
+        //return false;
     }
 
     @Override
     public boolean contains(Object o) {
-        return false;
+        throw new IllegalArgumentException();
+        // return false;
     }
 
     @Override
     public Iterator iterator() {
-        return null;
+
+        throw new IllegalArgumentException();
+        // return null;
     }
 
     @Override
     public Object[] toArray() {
-        return new Object[0];
+
+        throw new IllegalArgumentException();
+        // return new Object[0];
     }
 
     @Override
     public boolean addAll(Collection c) {
-        return false;
+        throw new IllegalArgumentException();
+        //return false;
     }
 
     @Override
     public void clear() {
-
+        throw new IllegalArgumentException();
     }
 
     @Override
-    public boolean removeAll(Collection c) {
-        return false;
+    public boolean removeAll(Collection c)
+    {
+        throw new IllegalArgumentException();
+        //return false;
     }
 
     @Override
     public boolean retainAll(Collection c) {
-        return false;
+        throw new IllegalArgumentException();
+       // return false;
     }
 
     @Override
     public boolean containsAll(Collection c) {
-        return false;
+        throw new IllegalArgumentException();
+        // return false;
     }
 
     @Override
     public Object[] toArray(Object[] a) {
-        return new Object[0];
+
+        throw new IllegalArgumentException();
+        // return new Object[0];
     }
 }
