@@ -9,88 +9,69 @@ import java.util.Set;
 
 public class ThreadSafeList implements Set {
 
-    /// +++
-    @Override
-    public boolean add(Object o) {
-        return false;
-    }
-    ///+++
-    @Override
-    public boolean remove(Object o) {
-        return false;
-    }
-    ///----
-    public boolean get (Object o) {
-        return false;
-    }
 
-
-
-
-    /////////////////////////////////////////////////
     @Override
     public int size() {
-        throw new IllegalArgumentException();
-        //return 0;
+        return 0;
     }
 
     @Override
     public boolean isEmpty() {
-
-        throw new IllegalArgumentException();
-        //return false;
+        return false;
     }
+
     @Override
     public boolean contains(Object o) {
-        throw new IllegalArgumentException();
-        // return false;
+        return false;
     }
 
     @Override
     public Iterator iterator() {
-
-        throw new IllegalArgumentException();
-        // return null;
+        return null;
     }
+
     @Override
     public Object[] toArray() {
-
-        throw new IllegalArgumentException();
-        // return new Object[0];
-    }
-    @Override
-    public boolean addAll(Collection c) {
-        throw new IllegalArgumentException();
-        //return false;
-    }
-    @Override
-    public void clear() {
-        throw new IllegalArgumentException();
-    }
-
-    @Override
-    public boolean removeAll(Collection c)
-    {
-        throw new IllegalArgumentException();
-        //return false;
-    }
-
-    @Override
-    public boolean retainAll(Collection c) {
-        throw new IllegalArgumentException();
-       // return false;
-    }
-
-    @Override
-    public boolean containsAll(Collection c) {
-        throw new IllegalArgumentException();
-        // return false;
+        return new Object[0];
     }
 
     @Override
     public Object[] toArray(Object[] a) {
+        return new Object[0];
+    }
 
-        throw new IllegalArgumentException();
-        // return new Object[0];
+    @Override
+    public boolean add(Object o) {
+        return false;
+    }
+
+    @Override
+    public boolean remove(Object o) {
+        return false;
+    }
+
+    @Override
+    public boolean addAll(Collection c) {
+        return false;
+    }
+
+    @Override
+    public void clear() {
+
+    }
+
+    @Override
+    public boolean removeAll(Collection c) {
+        return false;
+    }
+
+    @Override
+    public boolean retainAll(Collection c) {
+        return false;
+    }
+
+    @Override
+    public boolean containsAll(Collection c) {
+        return false;
     }
 }
