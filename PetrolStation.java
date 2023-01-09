@@ -16,5 +16,7 @@ public class PetrolStation extends ThreadSafeList {
         // можна визвати цей метод до 3х разів одночасно
         // схоже що він визивається з потоку run
     }
-
 }
+
+
+class
