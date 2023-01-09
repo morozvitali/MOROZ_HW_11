@@ -2,37 +2,27 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.Set;
 
+/// якщо  метод не реалізований на 100%
+//то повертати помилку
+
+
 
 public class ThreadSafeList implements Set {
-
-
-
-
 
     /// +++
     @Override
     public boolean add(Object o) {
         return false;
     }
-
-
     ///+++
     @Override
     public boolean remove(Object o) {
         return false;
     }
-
-
     ///----
     public boolean get (Object o) {
         return false;
     }
-
-
-
-
-
-
 
 
 
@@ -50,7 +40,6 @@ public class ThreadSafeList implements Set {
         throw new IllegalArgumentException();
         //return false;
     }
-
     @Override
     public boolean contains(Object o) {
         throw new IllegalArgumentException();
@@ -63,20 +52,17 @@ public class ThreadSafeList implements Set {
         throw new IllegalArgumentException();
         // return null;
     }
-
     @Override
     public Object[] toArray() {
 
         throw new IllegalArgumentException();
         // return new Object[0];
     }
-
     @Override
     public boolean addAll(Collection c) {
         throw new IllegalArgumentException();
         //return false;
     }
-
     @Override
     public void clear() {
         throw new IllegalArgumentException();
